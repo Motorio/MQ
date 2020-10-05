@@ -1,3 +1,7 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 @font-face {
     font-family: OpenSans;
     src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
@@ -95,7 +99,7 @@ margin-bottom: 0;
 .main-wrapper {
   width: 1200px;
   padding: 0 15px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   display: flex;
   justify-content: space-between;
   margin: auto;
@@ -111,9 +115,6 @@ margin-bottom: 0;
   margin-right: auto;
   text-align: center;
 }
-.trend-heading-wrapper {
-  
-}
 
 .heading {
   box-sizing: border-box;
@@ -121,7 +122,7 @@ margin-bottom: 0;
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #0f0d0e;
+  color: #000000;
 }
 
 .trend-heading {
@@ -141,36 +142,21 @@ margin-bottom: 0;
       
 .trendbox {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .trend-article {
-  width: calc(25% - 2px);
+  width: calc(25% - 4px);
   height: 320px;
+  background-position: center;
+  background-size: cover; 
+  padding: 20px;
   display: flex;
-  /* box-sizing: border-box; */
+  align-items: end;
   position: relative;
-  overflow: hidden;
-  /* background-color: black; */
 }
 
 .trend-article:not(:first-child) {
   margin-left: 2px;
-}
-
-.trend-img {
-  display: block;
-  width: 100%; 
-}
-
-.trendcard {
-  position: absolute;
-  top: 50%;
- width: 90%;
-  text-align: left;
-  margin: 5%;
-   border: 3px solid rgb(181, 159, 91);
-   z-index: 1;
 }
 
 .trend-article::after {
@@ -184,24 +170,39 @@ margin-bottom: 0;
   opacity: 0.6;
 }
 
-.trend_tags {
-  margin-top: 0;
-  margin-left: 0;
-  padding-left: 0;
-  
+.trend-article-01 {
+  background-image: url('../images/trend1.jpg');
+}
+
+.trend-article-02 {
+  background-image: url('../images/trend2.jpg');
+}
+
+.trend-article-03 {
+  background-image: url('../images/trend3.jpg');
+}
+
+.trend-article-04 {
+  background-image: url('../images/trend4.jpg');
+}
+
+.trendcard {
+  margin-top: 140px;
+  padding: 16px;
+  border: 3px solid rgb(181, 159, 91);
+  position: relative;
+  z-index: 2;
 }
 
 .trend-list {
-  margin-top: 0;
-  margin-left: 10px;
-  padding-left: 0;
   list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
 }
 
-.trend-list-item:not(:first-child) {
+ .trend-list-item { 
   margin-left: 17px;
 }
 
@@ -214,20 +215,22 @@ margin-bottom: 0;
   text-decoration: none;
   z-index: 2;
 }
+.trend-title {
+  margin-top: 16px;
+}
 
 .trend-text {
-   
+  margin: 0;
 }
 
 .trend-text-link {
   position: relative;
   text-decoration: none;
-    text-transform: uppercase;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
 }
-
 
 /* *******************************************
 ****************NEWS************************
@@ -611,7 +614,7 @@ margin-bottom: 0;
   display: block;
   text-decoration: none;
   text-transform: uppercase;
-  color: #0f0d0e;
+  color: #000000;
   font-size: 20px;
   line-height: 24px;
 }
@@ -654,8 +657,11 @@ margin-bottom: 0;
   margin-top: -30px;
   border: 3px solid #ffd700;
   height: 267px;
-  padding: 55px 24px 28px;
-  position: relative;
+  padding-top: 55px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 28px;
+    position: relative;
 }
 
 .product__title {
@@ -696,12 +702,18 @@ margin-bottom: 0;
   margin-bottom: 5px;
 }
 
+.product__prices {
+  margin-top: -1030px;
+  display: block;
+}
+
 .product__price {
   font-size: 24px;
   font-weight: 700;
   color: #222;
   line-height: 1;
-  display: flex;
+  display: block;
+ 
 }
 .currency {
   margin-left: .2em;
