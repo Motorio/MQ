@@ -14,8 +14,16 @@
     <header class="header">
         <div class="header-wrapper">
           <div class="container">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg" class="header-logo" alt="logo" width="180">
+            <img src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg" 
+            class="header-logo" 
+            alt="logo" width="180">
             <nav class="menu">
+              
+              <button class="menu__button">
+                <span class="menu__button-label"></span> 
+              </button>
+      
+
               <ul class="menu-list">
                 <li class="menu-list-item">
                   <a class="menu-link" href="#0">главная</a>
@@ -251,6 +259,7 @@
                 </p>
               </div>
             </article>
+<!-- 
             <article class="newsfeed">
               <div class="news-preview">
                 <img class="hiking" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post6.jpg" alt="people_on_the_summit" width="380">
@@ -303,6 +312,7 @@
                 </div>
               </div>
             </article>
+             -->
           </main>
           <aside class="new-posts">
             <section class="posts">
@@ -456,7 +466,11 @@
     <article class="product"> 
 
       <div class="product__imgbox">
-        <img class="product__img" src="./images/shop-item-desk1.jpg" alt="Превью товара: Подушки">
+        <picture class="product__img">
+          <source srcset="./images/shop-item-mobile1.jpg" media="(max-width:640px)"> 
+            <source srcset="./images/shop-item-tablet1.jpg" media="(min-width:641px) and (max-width:1200px)">
+              <img src="./images/shop-item-desk1.jpg" alt="Превью товара: Подушки">
+      </picture>
       </div>
 
       <div class="product__body">
@@ -485,10 +499,12 @@
       </div>
     </article>
   <article class="product">
-      <div class="product__imgbox">
-        <img class="product__img" 
-              src="./images/shop-item-desk2.jpg" 
-              alt="Превью товара">
+    <div class="product__imgbox">
+      <picture class="product__img">
+        <source srcset="./images/shop-item-mobilet2.jpg" media="(max-width:640px)"> 
+          <source srcset="./images/shop-item-tablet2.jpg" media="(min-width:641px) and (max-width:1200px)">
+            <img src="images/shop-item-desk2.jpg" alt="Превью товара">
+    </picture>
       </div>
       <div class="product__body">
         <div class="product__content">
@@ -509,9 +525,13 @@
         </footer>
       </div>
     </article>
-  <article class="product">
+    <article class="product">
       <div class="product__imgbox">
-        <img class="product__img" src="./images/shop-item-desk3.jpg" alt="Превью товара">
+        <picture class="product__img">
+          <source srcset="./images/shop-item-mobilet3.jpg" media="(max-width:640px)"> 
+            <source srcset="./images/shop-item-tablet3.jpg" media="(min-width:641px) and (max-width:1200px)">
+              <img src="images/shop-item-desk3.jpg" alt="Превью товара">
+      </picture>
       </div>
       <div class="product__body">
         <div class="product__content">
