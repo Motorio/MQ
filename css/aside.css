@@ -93,7 +93,7 @@
   }
   
   .button {
-    background-image: url('https://netology-code.github.io/html-2-diploma/sources/images/search.svg');
+    background-image: url('../svg/search.svg');
     background-position: center;
     background-size: 50%;
     width: 47px;

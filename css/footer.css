@@ -44,23 +44,23 @@
   }
   
   .social-icons-link-twitter {
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg);
+    background-image: url('../svg/004-twitter.svg');
   }
   
   .social-icons-link-pinterest {
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg);
+    background-image: url('../svg/001-pinterest.svg');
   }
   
   .social-icons-link-facebook {
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg);
+    background-image: url('../svg/002-facebook-logo.svg');
   }
   
   .social-icons-link-instagram {
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg);
+    background-image: url('../svg/005-instagram.svg');
   }
   
   .social-icons-link-tumblr {
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg);
+    background-image: url('../svg/003-tumblr.svg');
   }
   
   .visually-hidden {
