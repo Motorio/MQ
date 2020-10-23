@@ -1,39 +1,39 @@
-*, 
-*::after, 
+*,
+*::after,
 *::before {
   box-sizing: border-box;
 }
 
 @font-face {
-    font-family: OpenSans;
-    src: url('../fonts/OpenSans-Regular.woff');
-    font-weight: 400;
-    font-style: normal;
-  }
-  
+  font-family: OpenSans;
+  src: url("../fonts/OpenSans-Regular.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
 @font-face {
   font-family: OpenSans;
-  src: url('../fonts/OpenSans-Bold.woff');
+  src: url("../fonts/OpenSans-Bold.woff");
   font-weight: 700;
   font-style: bold;
 }
-  
+
 body {
   margin: 0;
   font-family: OpenSans;
 }
-   
+
 .menu {
-padding-top: 9px;
+  padding-top: 9px;
 }
-  
+
 .menu-list {
-display: flex;
-flex-wrap: wrap;
-list-style: none;
-padding-left: 0;
-margin-top: 0;
-margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .menu-link {
@@ -56,5 +56,4 @@ margin-bottom: 0;
   .trend-article:not(:first-child) {
     margin-left: 2px;
   }
-  
 }
