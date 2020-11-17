@@ -52,15 +52,16 @@
   }
 
   .menu__button {
-    text-indent: -9999px;
     border: none;
     padding: 0;
-    position: relative;
     display: block;
     width: 23px;
     height: 4px;
     background-color: #ffffff;
     cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 15px;
   }
 
   .menu__button::after {

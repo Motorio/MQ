@@ -1,6 +1,12 @@
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+
 .popup-container {
     background-color: #ffffff;
     z-index: 800;
+    /* visibility: hidden; */
 }
 
 .x {
