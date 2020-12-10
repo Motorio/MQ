@@ -1,0 +1,45 @@
+.header {
+  background-image: url('../images/banner-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #000000;
+  position: relative;
+  padding: 28px 0;
+}
+
+.header-wrapper {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.header::after {
+content: "";
+background-color: #000000;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+opacity: 0.6;
+}
+  
+.container {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+}
+  
+.header-title {
+padding: 120px 0;
+font-size: 45px;
+position: relative;
+text-transform: uppercase;
+color: #ffffff;
+margin: auto;
+max-width: 800px;
+text-align: center;
+}

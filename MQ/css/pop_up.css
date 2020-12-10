@@ -1,0 +1,122 @@
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+
+.popup-container {
+    background-color: #ffffff;
+    z-index: 800;
+    /* visibility: hidden; */
+}
+
+.x {
+    display: flex;
+    position: relative;
+    top: -30px;
+    width: 28px;
+    height: 28px;
+    background-image: url(../svg/form-x.svg);
+    background-size: 28px;
+    background-repeat: no-repeat;
+    z-index: 999;
+}
+
+.popup-content-containers {
+    padding: 24px;
+}
+
+.popup-title {
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.popup-title::after {
+    content: "";
+    background-color: #e1d9bd;
+    height: 3px;
+    width: 66px;
+    margin-top: 25px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.popup-text {
+    margin-bottom: 12px;
+}
+
+.popup-select-survey-1 {
+   list-style: none;
+   width: 100%;
+   height: 50px;
+   border: 0;
+   color: #969696;
+   background: #f4f7f6;
+   box-sizing: border-box;
+   padding-left: 20px;
+   padding-right: 20px;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   background-image: url(../svg/form-arrows.svg);
+   background-size: 10px;
+   background-position: right 4px center;
+   background-repeat: no-repeat;
+   font-family: "Open Sans", Arial,sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 0.88rem;
+}
+
+.popup-survey-2, .popup-survey-3 {
+    margin-bottom: 25px;
+    margin-top: 33px;
+}
+
+.radio-survey {
+    display: inline-block;
+}
+
+.radio {
+    position: absolute;
+    clip: rect(1px,1px,1px,1px);
+    width: 1px;
+    height: 1px;
+}
+
+.fading {
+    content: "";
+    position: absolute;
+    background-color: #010000;
+    display: flex;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+
+@media (max-width: 1199px) and (min-width: 641px) {
+
+.popup-container {
+    max-width: 388px;
+}
+
+.x {
+    right: -360px;
+}
+
+}
+
+@media (max-width: 640px) {
+
+.popup-container {
+    max-width: 330px;
+}
+
+.x {
+    right: -300px;
+}
+}

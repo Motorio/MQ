@@ -1,0 +1,84 @@
+/*......................................
+  ................Footer...................
+  ........................................
+  ........................................*/
+  
+  .footer {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  
+  .footer-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  
+  .address {
+    padding: 30px 0;
+    background-color: #eeeeee;
+  }
+  
+  .social-icons {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  .social-icons-item:not(:first-child) {
+    margin-left: 16px;
+  }
+  
+  .social-icons-link {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .social-icons-link-twitter {
+    background-image: url('../svg/004-twitter.svg');
+  }
+  
+  .social-icons-link-pinterest {
+    background-image: url('../svg/001-pinterest.svg');
+  }
+  
+  .social-icons-link-facebook {
+    background-image: url('../svg/002-facebook-logo.svg');
+  }
+  
+  .social-icons-link-instagram {
+    background-image: url('../svg/005-instagram.svg');
+  }
+  
+  .social-icons-link-tumblr {
+    background-image: url('../svg/003-tumblr.svg');
+  }
+  
+  .visually-hidden {
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+  }
+  
+  .copyright {
+    margin-top: 73px;
+    text-align: center;
+   
+  }
+  
+  .copyright-link {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #999999;
+  }
